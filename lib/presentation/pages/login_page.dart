@@ -4,6 +4,7 @@ import 'package:bluestacks_assignment/store/game_store.dart';
 import 'package:bluestacks_assignment/utils/globals.dart';
 import 'package:bluestacks_assignment/utils/string_value.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class LoginPage extends StatelessWidget {
   static const String routeName = "LoginPage";
@@ -13,8 +14,14 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery
+        .of(context)
+        .size
+        .width;
+    double height = MediaQuery
+        .of(context)
+        .size
+        .height;
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
@@ -38,7 +45,10 @@ class LoginPage extends StatelessWidget {
               left: width * 0.05,
               right: width * 0.05,
               top: height * 0.02,
-              bottom: MediaQuery.of(context).viewInsets.bottom,
+              bottom: MediaQuery
+                  .of(context)
+                  .viewInsets
+                  .bottom,
             ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -74,7 +84,7 @@ class LoginPage extends StatelessWidget {
           TextFormField(
             decoration: _fieldInputDecoration(
               context,
-              hintText: StringValue.userName,
+              hintText: AppLocalizations.of(context)!.userName,
             ),
             validator: (String? value) {
               if (value != null && value.isEmpty) {
@@ -157,25 +167,24 @@ class LoginPage extends StatelessWidget {
             ),
             child: _gameStore.isLoading
                 ? Center(
-                    child: CircularProgressIndicator(),
-                  )
+              child: CircularProgressIndicator(),
+            )
                 : Text(
-                    StringValue.signIn,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: whiteColor,
-                      fontSize: titleSize,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+              StringValue.signIn,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: whiteColor,
+                fontSize: titleSize,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         );
       },
     );
   }
 
-  InputDecoration _fieldInputDecoration(
-    BuildContext context, {
+  InputDecoration _fieldInputDecoration(BuildContext context, {
     required String hintText,
   }) {
     return InputDecoration(
