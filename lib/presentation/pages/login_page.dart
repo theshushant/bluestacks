@@ -2,8 +2,8 @@ import 'package:bluestacks_assignment/presentation/custom/store_observer.dart';
 import 'package:bluestacks_assignment/presentation/pages/home_page.dart';
 import 'package:bluestacks_assignment/store/game_store.dart';
 import 'package:bluestacks_assignment/utils/globals.dart';
-import 'package:bluestacks_assignment/utils/string_value.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class LoginPage extends StatelessWidget {
   static const String routeName = "LoginPage";
@@ -74,17 +74,19 @@ class LoginPage extends StatelessWidget {
           TextFormField(
             decoration: _fieldInputDecoration(
               context,
-              hintText: StringValue.userName,
+              hintText: AppLocalizations.of(context)!.userName,
             ),
             validator: (String? value) {
               if (value != null && value.isEmpty) {
-                return StringValue.required;
+                return AppLocalizations.of(context)!.required;
               }
               if (value != null && value.length < 3) {
-                return StringValue.userName + StringValue.minLineRequired;
+                return AppLocalizations.of(context)!.userName +
+                    AppLocalizations.of(context)!.minLineRequired;
               }
               if (value != null && value.length > 10) {
-                return StringValue.userName + StringValue.maxLineRequired;
+                return AppLocalizations.of(context)!.userName +
+                    AppLocalizations.of(context)!.maxLineRequired;
               }
               return null;
             },
@@ -99,17 +101,19 @@ class LoginPage extends StatelessWidget {
             obscureText: true,
             decoration: _fieldInputDecoration(
               context,
-              hintText: StringValue.password,
+              hintText: AppLocalizations.of(context)!.password,
             ),
             validator: (String? value) {
               if (value != null && value.isEmpty) {
-                return StringValue.required;
+                return AppLocalizations.of(context)!.required;
               }
               if (value != null && value.length < 3) {
-                return StringValue.password + StringValue.minLineRequired;
+                return AppLocalizations.of(context)!.password +
+                    AppLocalizations.of(context)!.minLineRequired;
               }
               if (value != null && value.length > 10) {
-                return StringValue.password + StringValue.maxLineRequired;
+                return AppLocalizations.of(context)!.password +
+                    AppLocalizations.of(context)!.maxLineRequired;
               }
               return null;
             },
@@ -136,12 +140,14 @@ class LoginPage extends StatelessWidget {
           onTap: () async {
             formKey.currentState!.save();
             if (formKey.currentState!.validate() && !_gameStore.isLoading) {
+              FocusScope.of(context).requestFocus(new FocusNode());
               try {
                 await _gameStore.login(body: map);
                 Navigator.pushReplacementNamed(context, HomePage.routeName);
               } catch (e) {
                 final snackBar = SnackBar(
-                  content: Text(StringValue.invalidCredentials),
+                  content:
+                      Text(AppLocalizations.of(context)!.invalidCredentials),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }
@@ -160,7 +166,7 @@ class LoginPage extends StatelessWidget {
                     child: CircularProgressIndicator(),
                   )
                 : Text(
-                    StringValue.signIn,
+                    AppLocalizations.of(context)!.signIn,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: whiteColor,

@@ -130,6 +130,10 @@ graphs
 2.12
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/graphs-2.0.0/
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/graphs-2.0.0/lib/
+http
+2.12
+file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.3/
+file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.3/lib/
 http_multi_server
 2.12
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/http_multi_server-3.0.1/
@@ -306,6 +310,10 @@ timing
 2.12
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/timing-1.0.0/
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/timing-1.0.0/lib/
+translator
+2.12
+file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/translator-0.1.7/
+file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/translator-0.1.7/lib/
 typed_data
 2.12
 file:///home/shushant/Android/Sdk/flutter/.pub-cache/hosted/pub.dartlang.org/typed_data-1.3.0/

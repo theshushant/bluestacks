@@ -2,8 +2,8 @@ import 'package:bluestacks_assignment/model/user.dart';
 import 'package:bluestacks_assignment/presentation/pages/home_page.dart';
 import 'package:bluestacks_assignment/presentation/pages/login_page.dart';
 import 'package:bluestacks_assignment/utils/globals.dart';
-import 'package:bluestacks_assignment/utils/string_value.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class SplashPage extends StatelessWidget {
   static const String routeName = "SplashPage";
@@ -35,7 +35,7 @@ class SplashPage extends StatelessWidget {
     } catch (e) {
       Navigator.pushReplacementNamed(context, LoginPage.routeName);
       final snackBar = SnackBar(
-        content: Text(StringValue.unExpectedError),
+        content: Text(AppLocalizations.of(context)!.unExpectedError),
       );
       ScaffoldMessenger.of(context).showSnackBar(snackBar);
     }

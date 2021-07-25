@@ -5,6 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7a4b3ef-0174-4021-b587-a93ea8e78a68" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.dart_tool/build/fcd1995bc647fb959e82ea360c6c2c9a/asset_graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/build/fcd1995bc647fb959e82ea360c6c2c9a/asset_graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/package_config_subset" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/package_config_subset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/6.7/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/6.7/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/l10n/app_en.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/app_en.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/l10n/app_ja.arb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/l10n/app_ja.arb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/components/bluestacks_appbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/components/bluestacks_appbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/components/profile_section.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/components/profile_section.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/components/recommend_section/game_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/components/recommend_section/game_list.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/login_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/presentation/pages/splash_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/presentation/pages/splash_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/string_value.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../citibot-flutter" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../devslane-erp-flutter" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../letter-flutter" beforeDir="false" />
@@ -39,23 +66,23 @@
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/lib/presentation/pages" />
-      <recent name="$PROJECT_DIR$/lib/presentation/custom" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/lib/presentation/components/recommend_section" />
       <recent name="$PROJECT_DIR$/lib/presentation/components" />
       <recent name="$PROJECT_DIR$/lib/presentation/components/profile_section" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/lib/presentation/pages" />
+      <recent name="$PROJECT_DIR$/lib/presentation/custom" />
+      <recent name="$PROJECT_DIR$/lib/service" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,34 +103,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="683" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627057647450">
+    <state x="683" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1627156088352">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="683" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1627057647450" />
-    <state x="172" y="127" width="1648" height="853" key="AVDManager" timestamp="1627136926643">
+    <state x="683" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053@72.27.1848.1053" timestamp="1627156088352" />
+    <state x="172" y="127" width="1648" height="853" key="AVDManager" timestamp="1627197933814">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="172" y="127" width="1648" height="853" key="AVDManager/72.27.1848.1053@72.27.1848.1053" timestamp="1627136926643" />
-    <state width="1802" height="521" key="GridCell.Tab.0.bottom" timestamp="1627154747406">
+    <state x="172" y="127" width="1648" height="853" key="AVDManager/72.27.1848.1053@72.27.1848.1053" timestamp="1627197933814" />
+    <state width="1802" height="521" key="GridCell.Tab.0.bottom" timestamp="1627202146995">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="521" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1627154747406" />
-    <state width="1802" height="521" key="GridCell.Tab.0.center" timestamp="1627154747406">
+    <state width="1802" height="521" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1627202146995" />
+    <state width="1802" height="521" key="GridCell.Tab.0.center" timestamp="1627202146991">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="521" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1627154747406" />
-    <state width="1802" height="521" key="GridCell.Tab.0.left" timestamp="1627154747405">
+    <state width="1802" height="521" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1627202146991" />
+    <state width="1802" height="521" key="GridCell.Tab.0.left" timestamp="1627202146990">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="521" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1627154747405" />
-    <state width="1802" height="521" key="GridCell.Tab.0.right" timestamp="1627154747406">
+    <state width="1802" height="521" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1627202146990" />
+    <state width="1802" height="521" key="GridCell.Tab.0.right" timestamp="1627202146993">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1802" height="521" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1627154747406" />
-    <state x="687" y="292" width="618" height="522" key="find.popup" timestamp="1627150644971">
+    <state width="1802" height="521" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1627202146993" />
+    <state x="687" y="292" width="620" height="522" key="find.popup" timestamp="1627201422902">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="687" y="292" width="618" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1627150644971" />
+    <state x="687" y="292" width="620" height="522" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1627201422902" />
     <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1627150257305">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>

@@ -1,0 +1,16 @@
+{
+  "userName": "User Name",
+  "password": "Password",
+  "signIn": "Sign In",
+  "title": "FlyingWolf",
+  "recommendedForYou": "Recommended for you",
+  "maxLineRequired": " should have constraints up to 10 alphabets!",
+  "minLineRequired": " should have more than 3 alphabets!",
+  "invalidCredentials": "Invalid Credentials!",
+  "unExpectedError": "UnExpected Error Invalid!",
+  "required": "Required",
+  "rating": "Elo rating",
+  "tournamentPlayed": "Tournament\nPlayed",
+  "tournamentWon":"Tournament\nWon",
+  "winningPercentage": "Winning\nPercentage"
+}

@@ -1,5 +1,8 @@
+import 'dart:math';
+
 import 'package:bluestacks_assignment/utils/globals.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProfileSection extends StatelessWidget {
   @override
@@ -37,14 +40,15 @@ class ProfileSection extends StatelessWidget {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         Text(
-                          '2250',
+                          '${_getRandomNumber()}00',
                           style: TextStyle(
                             fontSize: mediumSize,
                             color: Colors.deepPurple,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         SizedBox(width: 8),
-                        Text('Elo rating'),
+                        Text(AppLocalizations.of(context)!.rating),
                         SizedBox(width: 8),
                       ],
                     ),
@@ -59,8 +63,8 @@ class ProfileSection extends StatelessWidget {
           children: [
             Expanded(
               child: _descriptionBox(
-                '34',
-                "Tournaments\nplayed",
+                '${_getRandomNumber()}',
+                AppLocalizations.of(context)!.tournamentPlayed,
                 Colors.orange,
                 Colors.orangeAccent,
                 topLeft: Radius.circular(15),
@@ -70,8 +74,8 @@ class ProfileSection extends StatelessWidget {
             SizedBox(width: 1.5),
             Expanded(
               child: _descriptionBox(
-                '09',
-                "Tournaments\nwon",
+                '${_getRandomNumber()}',
+                AppLocalizations.of(context)!.tournamentWon,
                 Colors.deepPurple,
                 Colors.deepPurpleAccent,
               ),
@@ -80,7 +84,7 @@ class ProfileSection extends StatelessWidget {
             Expanded(
               child: _descriptionBox(
                 '26%',
-                "Winning\npercentage",
+                AppLocalizations.of(context)!.winningPercentage,
                 Colors.red,
                 Colors.deepOrangeAccent,
                 topRight: Radius.circular(15),
@@ -92,16 +96,22 @@ class ProfileSection extends StatelessWidget {
       ],
     );
   }
+
+  int _getRandomNumber() {
+    Random random = new Random();
+    return random.nextInt(100);
+  }
+
   Widget _descriptionBox(
-      String number,
-      String title,
-      Color color1,
-      Color color2, {
-        Radius topLeft = Radius.zero,
-        Radius topRight = Radius.zero,
-        Radius bottomLeft = Radius.zero,
-        Radius bottomRight = Radius.zero,
-      }) {
+    String number,
+    String title,
+    Color color1,
+    Color color2, {
+    Radius topLeft = Radius.zero,
+    Radius topRight = Radius.zero,
+    Radius bottomLeft = Radius.zero,
+    Radius bottomRight = Radius.zero,
+  }) {
     return Container(
       padding: EdgeInsets.symmetric(vertical: 18),
       decoration: BoxDecoration(
@@ -137,5 +147,4 @@ class ProfileSection extends StatelessWidget {
       ),
     );
   }
-
 }
