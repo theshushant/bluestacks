@@ -1,4 +1,16 @@
 {
-    "helloWorld": "Hola Mundo!",
-    "userName":"ユーザー名"
+  "userName": "ユーザー名",
+  "password": "パスワード",
+  "signIn": "ログイン",
+  "title": "フライングウルフ",
+  "recommendedForYou": "あなたにおすすめ",
+  "maxLineRequired": "最大10個のアルファベットの制約が必要です。",
+  "minLineRequired": "3つ以上のアルファベットが必要です！",
+  "invalidCredentials": "無効な資格情報！",
+  "unExpectedError": "予期しないエラーが無効です！",
+  "required": "必須",
+  "rating": "ここに評価があります",
+  "tournamentPlayed": "トーナメント\nプレイした",
+  "tournamentWon":"トーナメント\n勝った",
+  "winningPercentage": "勝つ\nパーセンテージ"
 }

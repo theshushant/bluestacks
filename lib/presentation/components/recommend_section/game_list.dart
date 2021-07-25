@@ -2,8 +2,8 @@ import 'package:bluestacks_assignment/presentation/components/recommend_section/
 import 'package:bluestacks_assignment/presentation/custom/store_observer.dart';
 import 'package:bluestacks_assignment/store/game_store.dart';
 import 'package:bluestacks_assignment/utils/globals.dart';
-import 'package:bluestacks_assignment/utils/string_value.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class GameList extends StatelessWidget {
   @override
@@ -12,7 +12,7 @@ class GameList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          StringValue.recommendTag,
+          AppLocalizations.of(context)!.recommendedForYou,
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: titleSize,

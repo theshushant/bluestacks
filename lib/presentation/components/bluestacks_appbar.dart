@@ -1,8 +1,6 @@
-import 'dart:developer';
-
 import 'package:bluestacks_assignment/utils/globals.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BluestacksAppbar extends StatelessWidget {
   @override
@@ -11,24 +9,21 @@ class BluestacksAppbar extends StatelessWidget {
       margin: EdgeInsets.symmetric(
         vertical: 14,
       ),
+      padding: EdgeInsets.symmetric(
+        horizontal: 14
+      ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           InkWell(
             onTap: () async {
             },
-            child: Container(
-              padding: EdgeInsets.only(
-                left: 14,
-              ),
-              child: Icon(
-                Icons.menu_sharp,
-              ),
+            child: Icon(
+              Icons.menu_sharp,
             ),
           ),
           Expanded(
             child: Text(
-              'Flyingwolf',
+              AppLocalizations.of(context)!.title,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: titleSize,

@@ -2,7 +2,6 @@ import 'package:bluestacks_assignment/presentation/custom/store_observer.dart';
 import 'package:bluestacks_assignment/presentation/pages/home_page.dart';
 import 'package:bluestacks_assignment/store/game_store.dart';
 import 'package:bluestacks_assignment/utils/globals.dart';
-import 'package:bluestacks_assignment/utils/string_value.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -14,14 +13,8 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery
-        .of(context)
-        .size
-        .width;
-    double height = MediaQuery
-        .of(context)
-        .size
-        .height;
+    double width = MediaQuery.of(context).size.width;
+    double height = MediaQuery.of(context).size.height;
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Container(
@@ -45,10 +38,7 @@ class LoginPage extends StatelessWidget {
               left: width * 0.05,
               right: width * 0.05,
               top: height * 0.02,
-              bottom: MediaQuery
-                  .of(context)
-                  .viewInsets
-                  .bottom,
+              bottom: MediaQuery.of(context).viewInsets.bottom,
             ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -88,13 +78,15 @@ class LoginPage extends StatelessWidget {
             ),
             validator: (String? value) {
               if (value != null && value.isEmpty) {
-                return StringValue.required;
+                return AppLocalizations.of(context)!.required;
               }
               if (value != null && value.length < 3) {
-                return StringValue.userName + StringValue.minLineRequired;
+                return AppLocalizations.of(context)!.userName +
+                    AppLocalizations.of(context)!.minLineRequired;
               }
               if (value != null && value.length > 10) {
-                return StringValue.userName + StringValue.maxLineRequired;
+                return AppLocalizations.of(context)!.userName +
+                    AppLocalizations.of(context)!.maxLineRequired;
               }
               return null;
             },
@@ -109,17 +101,19 @@ class LoginPage extends StatelessWidget {
             obscureText: true,
             decoration: _fieldInputDecoration(
               context,
-              hintText: StringValue.password,
+              hintText: AppLocalizations.of(context)!.password,
             ),
             validator: (String? value) {
               if (value != null && value.isEmpty) {
-                return StringValue.required;
+                return AppLocalizations.of(context)!.required;
               }
               if (value != null && value.length < 3) {
-                return StringValue.password + StringValue.minLineRequired;
+                return AppLocalizations.of(context)!.password +
+                    AppLocalizations.of(context)!.minLineRequired;
               }
               if (value != null && value.length > 10) {
-                return StringValue.password + StringValue.maxLineRequired;
+                return AppLocalizations.of(context)!.password +
+                    AppLocalizations.of(context)!.maxLineRequired;
               }
               return null;
             },
@@ -146,12 +140,14 @@ class LoginPage extends StatelessWidget {
           onTap: () async {
             formKey.currentState!.save();
             if (formKey.currentState!.validate() && !_gameStore.isLoading) {
+              FocusScope.of(context).requestFocus(new FocusNode());
               try {
                 await _gameStore.login(body: map);
                 Navigator.pushReplacementNamed(context, HomePage.routeName);
               } catch (e) {
                 final snackBar = SnackBar(
-                  content: Text(StringValue.invalidCredentials),
+                  content:
+                      Text(AppLocalizations.of(context)!.invalidCredentials),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }
@@ -167,24 +163,25 @@ class LoginPage extends StatelessWidget {
             ),
             child: _gameStore.isLoading
                 ? Center(
-              child: CircularProgressIndicator(),
-            )
+                    child: CircularProgressIndicator(),
+                  )
                 : Text(
-              StringValue.signIn,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: whiteColor,
-                fontSize: titleSize,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+                    AppLocalizations.of(context)!.signIn,
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: whiteColor,
+                      fontSize: titleSize,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
           ),
         );
       },
     );
   }
 
-  InputDecoration _fieldInputDecoration(BuildContext context, {
+  InputDecoration _fieldInputDecoration(
+    BuildContext context, {
     required String hintText,
   }) {
     return InputDecoration(

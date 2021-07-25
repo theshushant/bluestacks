@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: "FlyingWolf",
         localizationsDelegates: const [
           AppLocalizations.delegate, // Add this line
           GlobalMaterialLocalizations.delegate,
@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         routes: {
           SplashPage.routeName: (BuildContext context) => SplashPage(),
           HomePage.routeName: (BuildContext context) => HomePage(),
-          LoginPage.routeName:(BuildContext context) =>LoginPage(),
+          LoginPage.routeName: (BuildContext context) => LoginPage(),
         },
       ),
     );
