@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider<GameStore>.value(
+
           value: GameStore(),
         ),
       ],
